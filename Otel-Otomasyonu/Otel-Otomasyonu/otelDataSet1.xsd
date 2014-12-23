@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="otelDataSet1" targetNamespace="http://tempuri.org/otelDataSet1.xsd" xmlns:mstns="http://tempuri.org/otelDataSet1.xsd" xmlns="http://tempuri.org/otelDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="otelConnection" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="otelConnection (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Otel_Otomasyonu.Properties.Settings.GlobalReference.Default.otelConnection" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="musterilerTableAdapter" GeneratorDataComponentClassName="musterilerTableAdapter" Name="musteriler" UserDataComponentName="musterilerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="otelConnection (Settings)" DbObjectName="otel.dbo.musteriler" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT tcKimlikNo FROM dbo.musteriler</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="tcKimlikNo" DataSetColumn="tcKimlikNo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="otelDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="otelDataSet1" msprop:Generator_UserDSName="otelDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="musteriler" msprop:Generator_TableClassName="musterilerDataTable" msprop:Generator_TableVarName="tablemusteriler" msprop:Generator_TablePropName="musteriler" msprop:Generator_RowDeletingName="musterilerRowDeleting" msprop:Generator_RowChangingName="musterilerRowChanging" msprop:Generator_RowEvHandlerName="musterilerRowChangeEventHandler" msprop:Generator_RowDeletedName="musterilerRowDeleted" msprop:Generator_UserTableName="musteriler" msprop:Generator_RowChangedName="musterilerRowChanged" msprop:Generator_RowEvArgName="musterilerRowChangeEvent" msprop:Generator_RowClassName="musterilerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tcKimlikNo" msprop:Generator_ColumnVarNameInTable="columntcKimlikNo" msprop:Generator_ColumnPropNameInRow="tcKimlikNo" msprop:Generator_ColumnPropNameInTable="tcKimlikNoColumn" msprop:Generator_UserColumnName="tcKimlikNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
